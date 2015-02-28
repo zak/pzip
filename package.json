@@ -1,0 +1,19 @@
+{
+  "name": "pzip",
+  "version": "0.0.0",
+  "description": "Create passworded zip files with the zip binary",
+  "main": "index.js",
+  "scripts": {
+    "test": "faucet ./test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:benjaminparnell/pzip"
+  },
+  "author": "Benjamin Parnell <me@benparnell.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^3.5.0"
+  }
+}
