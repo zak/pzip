@@ -1,4 +1,4 @@
-# pzip
+# pzip [![Build Status](https://travis-ci.org/benjaminparnell/pzip.svg)](https://travis-ci.org/benjaminparnell/pzip)
 
 `pzip` uses the `zip` binary to create encrypted zip files that can be unlocked
 with a specified password.
