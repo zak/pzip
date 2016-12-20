@@ -1,6 +1,6 @@
 var spawn = require('child_process').spawn
 
-function pzip(path, password, opts) {
+function pzip(filelist, zipfilename, password, opts) {
   if (opts === undefined) opts = {}
 
   if (!password) {
@@ -9,7 +9,7 @@ function pzip(path, password, opts) {
     throw new TypeError('password must be a string')
   }
 
-  var zip = spawn('bin/zip', [ '-j', '-P', password, '-', path ], opts)
+  var zip = spawn(__dirname + '/bin/zip', ['-P', password, zipfilename, filelist], opts)
 
   return zip
 }
