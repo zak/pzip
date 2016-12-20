@@ -11,7 +11,7 @@ function pzip(filelist, zipfilename, password, opts) {
 
   var zip = spawn(__dirname + '/bin/zip', ['-P', password, zipfilename, filelist], opts)
 
-  return zip
+  return zipfilename
 }
 
 module.exports = pzip
