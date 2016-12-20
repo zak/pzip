@@ -9,7 +9,7 @@ function pzip(path, password, opts) {
     throw new TypeError('password must be a string')
   }
 
-  var zip = spawn('zip', [ '-j', '-P', password, '-', path ], opts)
+  var zip = spawn('bin/zip', [ '-j', '-P', password, '-', path ], opts)
 
   return zip
 }
